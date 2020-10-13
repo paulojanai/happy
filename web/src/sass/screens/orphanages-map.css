@@ -10,33 +10,22 @@ body {
   background-color: #EBF2F5;
 }
 
-.page-landing {
+.page-map {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(329.54deg, #12AFCB 0%, #00c7c7 100%);
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.content-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 1100px;
-  height: 100%;
-  max-height: 680px;
+.page-map aside {
+  background: linear-gradient(329.54deg, #12AFCB 0%, #00c7c7 100%);
+  width: 440px;
+  padding: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -44,31 +33,21 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("../../assets/illustration.svg") no-repeat 80% center;
 }
 
-.content-wrapper main {
-  max-width: 350px;
-}
-
-.content-wrapper main h1 {
-  font-size: 5.2rem;
-  line-height: 5.2rem;
+.page-map aside h2 {
+  font-size: 2rem;
   font-weight: 800;
+  line-height: 42px;
+  margin-top: 64px;
 }
 
-.content-wrapper main p {
-  margin-top: 3rem;
-  font-size: 1.4rem;
-  line-height: 34px;
+.page-map aside p {
+  line-height: 28px;
+  margin-top: 24px;
 }
 
-.content-wrapper .location {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 24px;
-  line-height: 34px;
+.page-map aside footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,14 +55,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: right;
+  line-height: 24px;
 }
 
-.content-wrapper .location strong {
+.page-map aside footer strong {
   font-weight: 800;
 }
 
-.content-wrapper .enter-app {
+.page-map .create-orphanage {
   position: absolute;
   height: 5.2rem;
   width: 5.2rem;
@@ -99,15 +78,15 @@ body {
           justify-content: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  bottom: 0;
-  right: 0;
-  background-color: #FFD666;
-  color: #8D734B;
-}
-
-.content-wrapper .enter-app:hover {
+  bottom: 80px;
+  right: 80px;
   color: #15C3D6;
-  width: 7.2rem;
   background: #96FEFF;
 }
-/*# sourceMappingURL=landing.css.map */
+
+.page-map .create-orphanage:hover {
+  background-color: #FFD666;
+  color: #8D734B;
+  width: 7.2rem;
+}
+/*# sourceMappingURL=orphanages-map.css.map */

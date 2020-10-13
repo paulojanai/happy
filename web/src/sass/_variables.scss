@@ -8,3 +8,7 @@ $yellow: #FFD666;
 $green-light: #3EE08F;
 $green: #37C77F;
 $brown: #8D734B;
+
+@mixin gradient-blue {
+  background: linear-gradient(329.54deg, $blue-shadow 0%, $cyan 100%);
+}

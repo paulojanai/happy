@@ -10,3 +10,17 @@ body {
   color: #FFFFFF;
   background-color: $background-color;
 }
+
+@mixin btn {
+  position: absolute;
+
+  height: 5.2rem;
+  width: 5.2rem;
+
+  border-radius: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}

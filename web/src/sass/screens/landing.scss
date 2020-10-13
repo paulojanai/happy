@@ -1,8 +1,5 @@
 @import "../variables";
-
-@mixin gradient-blue {
-  background: linear-gradient(329.54deg, $blue-shadow 0%, $cyan 100%);
-}
+@import "../base";
 
 .page-landing {
   width: 100vw;
@@ -35,11 +32,12 @@
 
     h1 {
       font-size: 5.2rem;
+      line-height: 5.2rem;
       font-weight: 800;
     }
 
     p {
-      margin-top: 40px;
+      margin-top: 3rem;
       font-size: 1.4rem;
       line-height: 34px;
     }
@@ -63,20 +61,13 @@
   }
 
   .enter-app {
-    position: absolute;
+    @include btn();
+
     bottom: 0;
     right: 0;
 
-    height: 5.2rem;
-    width: 5.2rem;
     background-color: $yellow;
     color: $brown;
-    border-radius: 1.6rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s;
 
     &:hover {
       color: $blue;
