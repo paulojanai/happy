@@ -1,7 +1,86 @@
 @import "../variables";
 
-.page-landing {
-  width: 100vh;
-  height: 100vh;
+@mixin gradient-blue {
   background: linear-gradient(329.54deg, $blue-shadow 0%, $cyan 100%);
+}
+
+.page-landing {
+  width: 100vw;
+  height: 100vh;
+  @include gradient-blue();
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 1100px;
+
+  height: 100%;
+  max-height: 680px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: url("../../assets/illustration.svg") no-repeat 80% center;
+
+  main {
+    max-width: 350px;
+
+    h1 {
+      font-size: 5.2rem;
+      font-weight: 800;
+    }
+
+    p {
+      margin-top: 40px;
+      font-size: 1.4rem;
+      line-height: 34px;
+    }
+  }
+
+  .location {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-size: 24px;
+    line-height: 34px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+    strong {
+      font-weight: 800;
+    }
+  }
+
+  .enter-app {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    height: 5.2rem;
+    width: 5.2rem;
+    background-color: $yellow;
+    color: $brown;
+    border-radius: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s;
+
+    &:hover {
+      color: $blue;
+      background: $blue-light;
+    }
+  }
 }
