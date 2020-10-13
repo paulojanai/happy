@@ -88,12 +88,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .content-wrapper .enter-app:hover {
   color: #15C3D6;
+  width: 7.2rem;
   background: #96FEFF;
 }
 /*# sourceMappingURL=landing.css.map */
