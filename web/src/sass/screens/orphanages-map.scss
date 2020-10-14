@@ -42,8 +42,14 @@
     }
   }
 
+  .leaflet-container {
+    z-index: 5;
+  }
+
   .create-orphanage {
     @include btn();
+
+    z-index: 10;
 
     bottom: 80px;
     right: 80px;
